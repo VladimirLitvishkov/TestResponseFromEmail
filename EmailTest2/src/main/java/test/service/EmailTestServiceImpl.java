@@ -9,14 +9,14 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
-import test.model.Email;
-import test.repository.EmailTestRepository;
+//import test.model.Email;
+//import test.repository.EmailTestRepository;
 
 @Service
 public class EmailTestServiceImpl implements EmailTestService {
 	
-	@Autowired
-	EmailTestRepository repository;
+//	@Autowired
+//	EmailTestRepository repository;
 	
 	@Autowired
 	JavaMailSender mailSender;
@@ -37,8 +37,8 @@ public class EmailTestServiceImpl implements EmailTestService {
 		message.setTo("v.litva.alf@gmail.com");
 		message.setText("Test");
 		mailSender.send(message);
-		Email email = Email.builder().build();
-		repository.save(email);
+//		Email email = Email.builder().build();
+//		repository.save(email);
 
 	}
 

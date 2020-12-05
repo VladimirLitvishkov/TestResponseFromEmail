@@ -37,8 +37,8 @@ public class EmailTestServiceImpl implements EmailTestService {
 		message.setTo("v.litva.alf@gmail.com");
 		message.setText("Test");
 		mailSender.send(message);
-		Email email = Email.builder().build();
-		repository.save(email);
+//		Email email = Email.builder().build();
+//		repository.save(email);
 
 	}
 
